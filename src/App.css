@@ -1,0 +1,67 @@
+.Game1{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 2rem;
+}
+.game2{
+    width: calc(100% - 50%);
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 2rem;
+}
+.screen{
+    width: 100%;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.Game2{
+    width: 100%;
+    display: flex;
+    height: 100%;
+
+}
+.game{
+    display: flex;
+    width: 100%;
+    height: 60%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.match{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(35, 32, 32, 0.258);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.intro{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.intro img{
+    width: 100%;
+    height: 100%;
+    
+    
+}
+.intro .btn{
+    position: absolute;
+    bottom: 70px;
+    right: 150px;
+    width: 18%;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+}

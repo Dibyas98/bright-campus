@@ -1,0 +1,72 @@
+.card{
+    width: 100px;
+    height: 150px;
+    background-color: transparent;
+    padding: 0.1rem;
+    border: 2px solid white;
+    background-color: white;
+    perspective: 1000px;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+.card-flip{
+    transform: rotateY(180deg);
+}
+.card_front,.card_back{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(235, 180, 198, 0.753);
+    /* filter: blur(10px); */
+    backdrop-filter: blur(3px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: absolute;
+    backface-visibility: hidden;
+    top: 0;
+    left: 0;
+
+}
+.card_back img{
+width: 80%;
+height: 90px;
+}
+.card_back{
+    transform: rotateY(180deg);
+}
+.heart{
+    width: 10px;
+    height: 10px;
+    background-color: rgb(205, 65, 65);
+    position: relative;
+    transform: rotate(-45deg);
+    /* filter: blur(1px); */
+    box-shadow: 0px 3px 10px 1px red;
+    /* border: 2px solid white; */
+}
+.heart::before{
+    content: " ";
+    width: 10px;
+    height: 10px;
+    background-color: rgb(205, 65, 65);
+    position: absolute;
+    top: -8px;
+    border-radius: 5px;
+    /* filter: blur(1px); */
+    box-shadow: -3px -2px 10px 1px red;
+    /* border-top: 2px solid white; */
+}
+.heart::after{
+    content: " ";
+    width: 10px;
+    height: 10px;
+    background-color: rgb(205, 65, 65);
+    position: absolute;
+    right: -8px;
+    border-radius: 5px;
+    /* filter: blur(1px); */
+    box-shadow: 1px 2px 19px 3px  red;
+    /* border-right: 2px solid white; */
+}
