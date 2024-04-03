@@ -7,8 +7,7 @@ export default function TryAgain({trya}) {
     <div className='match'>
         <div style={{display:'flex',flexDirection:'column',alignItems:'center',gap:'1rem'}}>
         <h1 style={{fontSize:'3rem'}}>Try Again</h1>
-        <button style={{width:'100px',height:'30px'}} onClick={()=> {trya()
-        handleStart()}}>Start</button>
+        <button style={{width:'100px',height:'30px'}} onClick={()=> window.location.reload()}>Start</button>
         </div>
     </div>
   )

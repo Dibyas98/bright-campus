@@ -8,7 +8,7 @@ export default function Game(props) {
     <div className='game' >
       {
         props.list.map((ele) =>{
-            return <div key={nanoid()} style={{width:'30%',height:'150px',display:'flex',justifyContent:'center'}}><Card data={ele} call = {props.func}></Card></div>
+            return <div key={nanoid()} style={{width:'30%',height:'150px',display:'flex',justifyContent:'center'}}><Card data={ele} call = {props.func} col={props.col}></Card></div>
         })
       }
     </div>
